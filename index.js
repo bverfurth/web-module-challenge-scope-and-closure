@@ -28,11 +28,19 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+
+      - Counter 1 is a local scope and Counter 2 is a global scope.
   
   2. Which of the two uses a closure? How can you tell?
+
+      - Counter 2 uses a closure because the variable is outside of the function.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+
+      - Counter 1 has the reset and would be preferable in multiple function calls. 
+      - Counter 2 would be better for recalling. 
+
 */
 
 // counter1 code
@@ -62,8 +70,10 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+  var minimum = 0;
+  var maximum = 2;
+  return Math.floor(Math.random() * 3)
 }
 
 
